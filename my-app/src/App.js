@@ -14,6 +14,11 @@ import Props3 from './components/R05_Props3';
 import State1 from './components/R06_State1';
 import State2 from './components/R07_State2';
 import State3 from './components/R08_State3';
+import StateReview1 from './review/State_Review1';
+import StateReview2 from './review/State_Review2';
+import Context1 from './components/R09_Context1'
+import Context2 from './components/R10_Context2'
+import Context3 from './R11_Context3/Parent'
 
 // 기본적으로 //, /*  */ 주석 사용가능(JS니까!!)
 // 단, HTML 코드가 작성되는 영역에서는 {/* */} 주석 사용
@@ -27,7 +32,7 @@ function App() {
       {/* <FunctionComponent/> */}
 
       {/* Props */}
-      {/* <Props1 num='1' name='홍아영'/>
+      <Props1 num='1' name='홍아영'/>
       <Props1 num='2' name='기모링'/>
       <Props1/>
 
@@ -46,7 +51,7 @@ function App() {
               />
 
       <hr/>
-      <Props3 productName='순대국' price='10000'/> */}
+      <Props3 productName='순대국' price='10000'/>
       {/* State */}
       <State1/>
 
@@ -55,6 +60,18 @@ function App() {
       <hr/>
       <State3/>
 
+      <StateReview1/>
+
+      <hr/>
+      <StateReview2/>
+
+      <Context1/>
+
+      <hr/>
+      <Context2/>
+
+      <hr/>
+      <Context3/>
     </>
   );
 }
